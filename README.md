@@ -18,7 +18,7 @@ print resp1
  "status":"valid",
  "sub_status":"",
  "free_email":true,
-  "did_you_mean":null,
+ "did_you_mean":null,
  "account":"flowerjill",
  "domain":"aol.com",
  "domain_age_days": "8426",
