@@ -40,7 +40,7 @@ Jill
 
 print resp2.status
 valid
-
+```
 
 **Properties and possible values returned by:**
 1. <b><i>ValidateEmail</b></i> method
