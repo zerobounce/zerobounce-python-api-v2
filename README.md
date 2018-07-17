@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/riquellopes/zerobounce-python-api.svg?branch=master)](https://travis-ci.org/riquellopes/zerobounce-python-api)
-# zerobounce-python-api
+# zerobounce-python-api-v2
 
 [ZeroBounce](https://www.zerobounce.net "Zerobounce Homepage") Python API.
 The response object allows an attribute-like style access.
@@ -11,44 +11,28 @@ from zerobounce import ZeroBounceAPI
 zba = ZeroBounceAPI('yourapikey____________')
 print zba.get_credits()
 resp1 = zba.validate('flowerjill@aol.com')
-resp2 = zba.validatewithip('flowerjill@aol.com')
 
 print resp1
 {
-  "address": "flowerjill@aol.com",
-  "status": "Valid",
-  "sub_status": "",
-  "account": "flowerjill",
-  "domain": "aol.com",
-  "disposable": False,
-  "toxic": False,
-  "firstname": "Jill",
-  "lastname": "Stein",
-  "gender": "female",
-  "location": None,
-  "creationdate": None,
-  "processedat": "2017-04-01 02:48:02.592"
-}
-
-print resp2
-{
-  "address": "flowerjill@aol.com",
-  "status": "Valid",
-  "sub_status": "",
-  "account": "flowerjill",
-  "domain": "aol.com",
-  "disposable": False,
-  "toxic": False,
-  "firstname": "Jill",
-  "lastname": "Stein",
-  "gender": "female",
-  "location": None,
-  "country": "United States",
-  "region": "Florida",
-  "city": "West Palm Beach",
-  "zipcode": "33401",
-  "creationdate": None,
-  "processedat": "2017-04-01 02:48:02.592"
+ "address":"flowerjill@aol.com",
+ "status":"valid",
+ "sub_status":"",
+ "free_email":true,
+  did_you_mean:null,
+ "account":"flowerjill",
+ "domain":"aol.com",
+ "domain_age_days": "8426",
+ "smtp_provider":"yahoo",
+ "mx_record":"mx-aol.mail.gm0.yahoodns.net",
+ "mx_found": true,
+ "firstname":"Jill",
+ "lastname":"Stein",
+ "gender":"female",
+ "country":"United States",
+ "region":"Florida",
+ "city":"West Palm Beach",
+ "zipcode":"33401",
+ "processed_at":"2017-04-01 02:48:02.592"
 }
 
 print resp.firstname
