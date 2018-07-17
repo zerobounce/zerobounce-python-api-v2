@@ -15,7 +15,7 @@ class ZeroBounceAPI(object):
             apikey (str): A 32 bytes length string"""
 
         self.apikey = apikey
-        self.url = "https://api.zerobounce.net/v1"
+        self.url = "https://api.zerobounce.net/v2"
 
     def get_credits(self):
         """Get the number of credits available in your ZeroBounce account"""
