@@ -21,7 +21,7 @@ class ZeroBounceAPI(object):
         """Get the number of credits available in your ZeroBounce account"""
 
         return int(
-            requests.get("%s/%s" % (self.url, "getcredits"), params={"apikey": self.apikey}).json()["Credits"])
+            requests.get("%s/%s" % (self.url, "getcredits"), params={"api_key": self.apikey}).json()["Credits"])
 
     def validate(self, email):
         """Get the validation result for one email address
@@ -31,23 +31,9 @@ class ZeroBounceAPI(object):
 
         Args:
             email (str): A syntactically valid email address"""
-
-        return AttrDict(
-            requests.get("%s/%s" % (self.url, "validate"), params={"email": email, "apikey": self.apikey}).json())
-
-    def validatewithip(self, email, ipaddress="99.123.12.122"):
-        """Get the validation result for one email address, using an IP.
-
-        Get information about the email address, such as
-        bounce status, First Name, Last Name, using an IP Address
-        for live validations.
-
-        Args:
-            email (str): A syntactically valid email address
             ipaddress (str, optional): Specify an IP Address to use (advanced)."""
 
+
         return AttrDict(
-            requests.get(
-                "%s/%s" % (
-                    self.url, "validatewithip"),
-                params={"email": email, "apikey": self.apikey, "ipaddress": ipaddress}).json())
+            requests.get("%s/%s" % (self.url, "validate"), params={"email": email, "apikey": self.apikey, "ipaddress": ipaddress}).json())
+    
