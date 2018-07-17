@@ -39,7 +39,7 @@ print resp.firstname
 Jill
 
 print resp2.status
-Valid
+valid
 
 
 ```
