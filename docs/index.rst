@@ -49,7 +49,7 @@ The response object allows an attribute-like style access.
     Jill
 
     print resp2.status
-    Valid
+    valid
 
 .. toctree::
    :maxdepth: 2
