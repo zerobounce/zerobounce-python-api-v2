@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.org/riquellopes/zerobounce-python-api.svg?branch=master)](https://travis-ci.org/riquellopes/zerobounce-python-api)
 # zerobounce-python-api-v2
 
-[ZeroBounce](https://www.zerobounce.net "Zerobounce Homepage") Python API.
+[ZeroBounce](https://www.zerobounce.net "Zerobounce Homepage") Python API v2.
 The response object allows an attribute-like style access.
 
 
