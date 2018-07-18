@@ -10,7 +10,7 @@ from zerobounce import ZeroBounceAPI
 
 zba = ZeroBounceAPI('yourapikey____________')
 print zba.get_credits()
-resp1 = zba.validate('flowerjill@aol.com')
+resp1 = zba.validate('flowerjill@aol.com','123.145.124.12')
 
 print resp1
 {
