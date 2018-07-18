@@ -53,18 +53,18 @@ sub_status  |antispam_system /greylisted /mail_server_temporary_error /forcible_
 account | The portion of the email address before the "@" symbol.
 domain | The portion of the email address after the "@" symbol.
 did_you_mean | Suggestive Fix for an email typo.
-domain_age_days | Age of the email domain in days or [null].
-free_email | [true/false] If the email comes from a free provider.
-mx_found | [true/false] Does the domain have an MX record.
+domain_age_days | Age of the email domain in days or [None].
+free_email | [True/False] If the email comes from a free provider.
+mx_found | [True/False] Does the domain have an MX record.
 mx_record | The preferred MX record of the domain
-smtp_provider | The SMTP Provider of the email or [null] (BETA).
-firstname | The first name of the owner of the email when available or [null].
-lastname  |The last name of the owner of the email when available or [null].
-gender |The gender of the owner of the email when available or [null].
-country |The country the email signed up when ip address is provided or [null].
-region |The region the email signed up when ip address is provided or [null].
-city |The city the email signed up when ip address is provided or [null].
-zipcode |The zipcode the email signed up when ip address is provided or [null].
+smtp_provider | The SMTP Provider of the email or [None] (BETA).
+firstname | The first name of the owner of the email when available or [None].
+lastname  |The last name of the owner of the email when available or [None].
+gender |The gender of the owner of the email when available or [None].
+country |The country the email signed up when ip address is provided or [None].
+region |The region the email signed up when ip address is provided or [None].
+city |The city the email signed up when ip address is provided or [None].
+zipcode |The zipcode the email signed up when ip address is provided or [None].
 processed_at |The UTC time the email was validated.
 
 2. <b><i>get_credits</b></i> method
