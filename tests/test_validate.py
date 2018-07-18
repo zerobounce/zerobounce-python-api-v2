@@ -11,6 +11,6 @@ def test_should_get_status_valid_when_validate_lowerjill(
 
     zerobounce = zerobounce.validate("flowerjill@aol.com")
 
-    assert zerobounce['status'] == "Valid"
+    assert zerobounce['status'] == "valid"
     assert zerobounce['firstname'] == "Jill"
     assert zerobounce['lastname'] == "Stein"
