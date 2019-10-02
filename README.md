@@ -24,7 +24,7 @@ print resp1
  "domain_age_days": "8426",
  "smtp_provider":"yahoo",
  "mx_record":"mx-aol.mail.gm0.yahoodns.net",
- "mx_found": True,
+ "mx_found": "True",
  "firstname":"Jill",
  "lastname":"Stein",
  "gender":"female",
