@@ -1,8 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from distutils.core import setup
-import pypandoc
+from setuptools import find_packages, setup
+
+with open('README.md', 'r') as fp:
+    README = fp.read()
 
 setup(
     name='zerobounce',
@@ -11,11 +13,13 @@ setup(
     author='Tudor Aursulesei',
     author_email='tudor@zerobounce.net',
     url='http://github.com/zerobounce/zerobounce-python-api',
-    long_description = pypandoc.convert("README.md", "rst"),
-    download_url = 'https://github.com/zerobounce/zerobounce-python-api/archive/0.1.4.tar.gz', # I'll explain this in a second
-    keywords = ['email', 'validation'], # arbitrary keywords
-    packages=[
-        'zerobounce',
+    long_description=README,
+    long_description_content_type="text/markdown",
+    download_url='https://github.com/zerobounce/zerobounce-python-api/archive/0.1.4.tar.gz', # I'll explain this in a second
+    keywords=['email', 'validation'], # arbitrary keywords
+    packages=find_packages(),
+    install_requires=[
+        'requests==2.20.0',
     ],
     classifiers=[
         'Development Status :: 4 - Beta',
